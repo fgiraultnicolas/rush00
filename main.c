@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgirault <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rapierar <rapierar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/12 10:57:47 by fgirault          #+#    #+#             */
-/*   Updated: 2026/09/12 11:06:46 by fgirault         ###   ########.fr       */
+/*   Updated: 2026/09/12 17:19:01 by fgirault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_putchar.c"
+#include "rush04.c"
 
-int	main(int argc, char *argv[])
+int	main(void)
 {
-	if (argc == 2)
-		rush04(argv[1], argv[2]);
-	return(0);
+	rush04(1, 5);
+	return (0);
 }
