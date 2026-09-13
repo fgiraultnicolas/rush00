@@ -6,14 +6,14 @@
 /*   By: rapierar <rapierar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/12 10:57:47 by fgirault          #+#    #+#             */
-/*   Updated: 2026/09/12 17:19:01 by fgirault         ###   ########.fr       */
+/*   Updated: 2026/09/13 12:02:25 by fgirault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rush04.c"
+void	rush04(int x, int y);
 
 int	main(void)
 {
-	rush04(45, 24);
+	rush04(5, 3);
 	return (0);
 }

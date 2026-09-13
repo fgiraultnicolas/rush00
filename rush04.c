@@ -6,14 +6,13 @@
 /*   By: rapierar <rapierar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/12 11:04:15 by fgirault          #+#    #+#             */
-/*   Updated: 2026/09/12 18:21:31 by fgirault         ###   ########.fr       */
+/*   Updated: 2026/09/13 12:14:01 by fgirault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_putchar.c"
+#include <unistd.h>
 
-void	rush04(int x, int y);
-void	line(int x, char a, char b, char c);
+void	ft_putchar(char c);
 
 void	line(int x, char a, char b, char c)
 {
@@ -42,15 +41,22 @@ void	rush04(int x, int y)
 {
 	int	count_row;
 
-	count_row = 1;
-	while (count_row <= y)
+	if (x <= 0 || y <= 0)
 	{
-		if (count_row == 1)
-			line(x, 'A', 'B', 'C');
-		else if (1 < count_row && count_row < y)
-			line(x, 'B', ' ', 'B');
-		else
-			line(x, 'C', 'B', 'A');
-		count_row++;
+		write(1, "error\n", 6);
+	}
+	else
+	{
+		count_row = 1;
+		while (count_row <= y)
+		{
+			if (count_row == 1)
+				line(x, 'A', 'B', 'C');
+			else if (1 < count_row && count_row < y)
+				line(x, 'B', ' ', 'B');
+			else
+				line(x, 'C', 'B', 'A');
+			count_row++;
+		}
 	}
 }
