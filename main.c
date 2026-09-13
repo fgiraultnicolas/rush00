@@ -14,6 +14,6 @@
 
 int	main(void)
 {
-	rush04(1, 5);
+	rush04(45, 24);
 	return (0);
 }
